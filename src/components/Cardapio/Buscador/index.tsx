@@ -14,6 +14,7 @@ function Buscador({ busca, setBusca }: BuscaProps) {
             type="text" 
             value={busca} 
             onChange={(e) => setBusca(e.target.value)} 
+            placeholder="Buscar"
         />
         <CgSearch className={styles.buscador__icone} />
     </div>

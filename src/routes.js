@@ -3,6 +3,7 @@ import Menu from 'components/Menu';
 import PaginaPadrao from 'components/PaginaPadrao';
 import Cardapio from 'pages/Cardapio';
 import Inicio from 'pages/Inicio';
+import NotFound from 'pages/NotFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRouter(){
@@ -16,6 +17,7 @@ export default function AppRouter(){
                         <Route index element={<Inicio />} />
                         <Route path='cardapio' element={<Cardapio />} />
                     </Route>
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
 
             </Router>

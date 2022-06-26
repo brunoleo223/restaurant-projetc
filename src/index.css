@@ -58,3 +58,9 @@ body{
   box-sizing: border-box;
   font-family: 'Italiana', serif !important;
 }
+
+#root > main.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }

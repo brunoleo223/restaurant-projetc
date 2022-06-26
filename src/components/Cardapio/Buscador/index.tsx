@@ -10,15 +10,15 @@ interface BuscaProps {
 function Buscador({ busca, setBusca }: BuscaProps) {
     return (
         <div className={styles.buscador}>
-        <input 
-            type="text" 
-            value={busca} 
-            onChange={(e) => setBusca(e.target.value)} 
-            placeholder="Buscar"
-        />
-        <CgSearch className={styles.buscador__icone} />
-    </div>
-    )
+            <input 
+                type="text" 
+                value={busca} 
+                onChange={(e) => setBusca(e.target.value)} 
+                placeholder="Buscar"
+            />
+            <CgSearch className={styles.buscador__icone} />
+        </div>
+    );
 }
 
 export default Buscador;
